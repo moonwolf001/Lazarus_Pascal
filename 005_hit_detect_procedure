@@ -1,0 +1,22 @@
+// 当たり判定をしている部分
+procedure TForm1.Timer1Timer(Sender: TObject);
+begin
+
+  …
+  if BulletActiveRight then
+  begin
+    ...
+    if (Abs(BulletXRight - TargetX) <= TargetHitTolerance) and
+       (Abs(BulletYRight - TargetY) <= TargetHitTolerance) then
+    begin
+      BulletActiveRight := False;
+      BulletXRight := TargetX;
+      BulletYRight := TargetY;
+      BulletRadiusRight := 10;
+      if not BulletActiveLeft then
+        ShowTargetMark := False;
+    end;
+  end;
+  ...
+
+end;
