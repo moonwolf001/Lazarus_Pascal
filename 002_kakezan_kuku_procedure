@@ -1,0 +1,23 @@
+procedure TForm1.Button1Click(Sender: TObject);
+var
+
+  A : integer; // A はかけられる数
+  B : integer; // B はかける数
+
+begin
+
+  for A :=1 to 9 do 
+  begin
+
+    for B:=1 to 8 do
+    begin
+
+      memo1.Append(
+
+      IntToStr(A) + ' x ' + IntToStr(B) + ' = ' + IntToStr( A * B )
+
+                      );
+
+    end;
+  end;
+end;        
