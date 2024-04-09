@@ -1,0 +1,13 @@
+// Nice Hitを表示している部分
+procedure TForm1.FormPaint(Sender: TObject);
+begin
+  ...
+  // Hit message
+  if ShowHitMessage then
+  begin
+    CurrentFontSize := Max(12, InitialMessageFontSize * HitMessageTimer div MaxHitMessageTimer);
+    Canvas.Font.Size := CurrentFontSize;
+    Canvas.Font.Color := clWhite;
+    Canvas.TextOut(StarX + (ClientWidth div 2) - CurrentFontSize * 2, StarY + 20, 'Nice Hit!');
+  end;         
+end;
