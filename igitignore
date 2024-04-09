@@ -1,0 +1,51 @@
+# Compiled binary and executable files
+*.exe
+*.dll
+*.o
+*.so
+
+# Compiled Dynamic Link Library
+*.dylib
+
+# Compiled Static Library
+*.lib
+*.a
+*.bundle
+
+# Debug files
+*.debug
+*.ppu
+*.lrs
+*.lfm
+*.o
+*.or
+*.res
+
+# Lazarus specific
+*.compiled
+*.lpi~
+*.lps
+*.bak
+*.local
+
+# Backup & temporary files
+*.bak
+*.tmp
+*.~*
+
+# IDE specific
+*.ide
+*.project
+*.lpi
+*.~*
+
+# Operating System specific files
+.DS_Store
+Thumbs.db
+
+# Other files to ignore
+*.log
+*.sql
+*.sqlite
+
+# Add here any other file extensions you wish to ignore.
