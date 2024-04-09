@@ -39,5 +39,5 @@
 
 ## 連絡先
 
-ツイッター(X)アカウント：MoonWolf_001
+ツイッター(X)アカウント：[MoonWolf_001](https://twitter.com/MoonWolf_001)　最新情報を発信しています。ぜひフォローしてください。
 
