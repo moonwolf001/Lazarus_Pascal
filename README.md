@@ -3,8 +3,6 @@
 このリポジトリは、LazarusとPascalを用いたプログラミングに関心のあるすべての人々、特に私の書籍を読んだ人々のためのものです。
 ここでは、私の様々な書籍に掲載されているプログラムのソースコードを紹介し、それぞれを異なるブランチに分けています。
 
-![MoonWolf_Pascal](https://github.com/moonwolf001/Lazarus_Pascal/blob/_img/img_p002.jpg)
-
 ## 書籍とブランチ
 
 ### [book100](https://github.com/moonwolf001/Lazarus_Pascal/tree/book100): ChatGPT4 + MoonWolf 中学生でも分かる 超入門 Lazarus( PASCAL ) 最初の一歩
