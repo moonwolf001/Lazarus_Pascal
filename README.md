@@ -49,7 +49,7 @@
 
 ## Lazarus(ラザラス)とは？
 
-![Lazarus Project Image](https://github.com/moonwolf001/Lazarus_Pascal/blob/main/__lazarus_img2.png?raw=true)
+![Lazarus Project Image](https://github.com/moonwolf001/Lazarus_Pascal/blob/_img/__lazarus_img2.png)
 Lazarus IDEの説明：
 [1] メインメニュー
 [2] コンポーネント・メニュー
