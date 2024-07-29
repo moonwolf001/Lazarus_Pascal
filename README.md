@@ -44,7 +44,9 @@
 
 ## MoonWolfによる他のプログラム言語
 
-[MoonWolfと学ぶPythonシリーズはこちら](https://github.com/moonwolf001/Python)
+[MoonWolfと学ぶPythonシリーズはこちら](https://github.com/moonwolf001/Python)<BR>
+[MoonWolfと学ぶJavaScriptシリーズはこちら](https://github.com/moonwolf001/JavaScript)<BR>
+[MoonWolfと学ぶなでしこシリーズはこちら](https://github.com/moonwolf001/Nadeshiko)<BR>
 
 
 ## Lazarus(ラザラス)とは？
