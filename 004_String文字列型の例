@@ -1,0 +1,9 @@
+// String 文字列型 のプログラム例
+ 
+procedure TForm1.Button1Click(Sender: TObject);
+var
+  S : String;  // Lazarusでは変数をVar直下に事前に宣言
+begin
+  S := '本日は晴天なり';  // 変数に文字列を代入
+  Memo1.Append(S);       // 文字列データをMemo1に追加モードで表示
+end;       
