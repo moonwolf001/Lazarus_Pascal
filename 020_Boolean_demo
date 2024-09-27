@@ -1,0 +1,13 @@
+// Booleam：ブール型のデモ
+
+procedure TForm1.Button1Click(Sender: TObject);
+var
+  Boo1,Boo2,Boo3,Boo4 : Boolean;
+begin
+  Boo1 := True;
+  Boo2 := False;
+  Boo3 := Boo1 and Boo2;
+  Boo4 := Boo1 or  Boo2;
+  Memo1.Append( BoolToStr(Boo3,True) );
+  Memo1.Append( BoolToStr(Boo4,True) );
+end;           
