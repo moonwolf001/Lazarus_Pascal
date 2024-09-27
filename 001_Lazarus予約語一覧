@@ -1,0 +1,21 @@
+// Lazarusの予約語一覧
+
+{
+
+absolute, abstract, alias, and, array, as, asm, assembler,  
+begin, break, case, cdecl, class, const, constructor, continue,  
+default, deprecated, destructor, div, do, downto,  
+else, end, except, export, exports, external,  
+false, far, file, finalization, finally, for, forward, function,  
+generic, goto, if, implementation, in, index, inherited, initialization, 
+inline, interface, is, label, library, local, message, mod,  
+name, near, nil, nodefault, not, object, of, on, operator, or, out, 
+overload, override, packed, pascal, platform, private, procedure, 
+program, property, protected, public, published, raise, read, record,  
+register, reintroduce, repeat, resourcestring,  
+safecall, sealed, set, shl, shr, stdcall, stored, string,  
+then, threadvar, to, true, try, type,  
+unit, until, uses, var, virtual, while, with, write, xor
+
+}
+
