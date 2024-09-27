@@ -1,0 +1,11 @@
+// Real 実数型（小数点を扱う型）の例
+
+procedure TForm1.Button1Click(Sender: TObject);
+var
+  Real1, Real2, Real3 : Real;
+begin
+  Real1 := 1.22;
+  Real2 := 2.331;
+  Real3 := Real1 + Real2;
+  Memo1.Append( FloatToStr(Real3) );  // FloatToStr()関数とは、Float to String の関数である。
+end;            
