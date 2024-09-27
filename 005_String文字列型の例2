@@ -1,0 +1,11 @@
+// String 文字列の事例２
+
+procedure TForm1.Button1Click(Sender: TObject);
+var
+  Str1, Str2, Str3 : String;
+begin
+  Str1 := 'MoonWolfの世界へようそこ！';
+  Str2 := 'お魚がたくさんいますよ！';
+  Str3 := Str1 + Str2;
+  Memo1.Append(Str3);
+end;       
