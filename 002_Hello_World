@@ -1,0 +1,14 @@
+// はじめてのプログラム。Lazarusでの Hello World !
+
+// フォームデザイナーでButton1をダブルクリック。
+// Lazarusが自動的に Procedure TForm1.Button1Click()を生成
+// その begin と end の間に、  
+  Memo1.Append('Hello World!');　
+//上記を記入して、コンパイル、実行をする。そして、Button1を押す。全角文字のスペースは入れないよう注意。
+
+
+procedure TForm1.Button1Click(Sender: TObject);
+var
+begin
+  Memo1.Append('Hello World!');
+end;       
