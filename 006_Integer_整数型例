@@ -1,0 +1,11 @@
+// Integer 整数型のプログラム例
+
+procedure TForm1.Button1Click(Sender: TObject);
+var
+  i1, i2, i3 : integer;
+begin
+  i1 := 10;
+  i2 := 2;
+  i3 := i1 + i2;
+  Memo1.Append( IntToStr(i3) );   // IntToStr() 関数とは、Integer to String の関数である。
+end;          
