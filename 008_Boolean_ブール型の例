@@ -1,0 +1,18 @@
+// Booleam：ブール型のデモ
+
+procedure TForm1.Button1Click(Sender: TObject);
+var
+  Boo1,Boo2,Boo3,Boo4 : Boolean;
+begin
+  Boo1 := True;            // Boolean型は、TrueとFalseのふたつの値のみを持つ
+  Boo2 := False;
+  Boo3 := Boo1 and Boo2;
+  Boo4 := Boo1 or  Boo2;
+  Memo1.Append( BoolToStr(Boo3,True) ); 
+  Memo1.Append( BoolToStr(Boo4,True) ); 
+
+// BoolToStr()関数は、Boolean to Stringの関数である。少し説明を加えます。
+// BoolToStr(第１引数, 第2引数 )  第１引数でBoolean型の変数、第２引数でTrueと記入するとTrueかFolseで結果を表す。
+// BoolToStr(第１引数) 第１引数でBoolean型の変数、この場合、Trueを-1, Falseを0という数字で結果を表現される。少し結果が分かりにくい。
+
+end;           
