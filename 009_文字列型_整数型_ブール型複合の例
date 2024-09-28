@@ -1,0 +1,23 @@
+// 文字列型、整数型、ブール型を使った複合例
+
+procedure TForm1.Button1Click(Sender: TObject);
+var
+  Name1   : String;
+  Age     : Integer;
+  Message1: String;
+  Emotion : Boolean;
+begin
+  Name1    := 'MoonWolf';
+  Age      := 20;
+  Message1 := '日本の皆さんPascalの世界良いですよ！';
+  Emotion  := True;
+
+  Memo1.Append('私の名前は' + Name1 + '　気持ちは' + IntToStr(Age) + '歳');
+  Memo1.Append(Message1);
+  Memo1.Append('Yes,That is ' + BoolToStr(Emotion, True));
+end;              
+
+// 実行結果：
+// 私の名前はMoonWolf　気持ちは20歳
+// 日本の皆さんPascalの世界良いですよ！
+// Yes,That is True
