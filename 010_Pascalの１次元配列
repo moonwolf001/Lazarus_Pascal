@@ -1,0 +1,14 @@
+// Pascal の一次元配列
+// データの数え方は、1個目から10個目。添え字も[1]から[10]
+
+procedure TForm1.Button1Click(Sender: TObject);
+var
+  Matrix : array[1..10] of Integer;   // この一行で10個の変数を一気に定義
+begin
+  Matrix[1] := 10;                    // 配列への代入 
+  Matrix[2] := 20;
+  Matrix[10] := 100;
+  Memo1.Append(IntToStr(Matrix[1]));  // Integerの配列のデータをStringに変換してから表示
+  Memo1.Append(IntToStr(Matrix[2]));
+  Memo1.Append(IntToStr(Matrix[10]));
+end;         
