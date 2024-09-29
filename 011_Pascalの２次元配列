@@ -1,0 +1,13 @@
+// Pascalの２次元配列
+
+procedure TForm1.Button1Click(Sender: TObject);
+var
+  Matrix : array[1..10,1..10] of Integer;   // この一行で10ｘ10=100個のデータの箱ができる
+begin
+  Matrix[1,1] := 10;                        // 二次元配列への代入
+  Matrix[1,2] := 200;
+  Matrix[10,10] := 10000;
+  Memo1.Append(IntToStr(Matrix[1,1]));       // Integer型の二次元配列をString型に変換して表示
+  Memo1.Append(IntToStr(Matrix[1,2]));
+  Memo1.Append(IntToStr(Matrix[10,10]));
+end;             
