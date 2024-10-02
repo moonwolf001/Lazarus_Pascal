@@ -1,0 +1,81 @@
+// レコード型の使用例
+// この例では、Interface部にTPersonという独自のレコード型を定義
+// Peopleという真苗の配列を、TPerson型で10人分定義
+// 定義されたレコード型の配列は、Button1 Clickにて、代入と表示を行っている
+
+unit Unit1;
+
+{$mode objfpc}{$H+}
+
+interface
+
+uses
+  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls;
+
+type
+  // TPerson型のレコードを定義
+  TPerson = record
+    Name: String;
+    Age: Integer;
+    City: String;
+    Weight: Real;  // kg
+  end;
+
+var
+  People: array[1..10] of TPerson;  // TPerson型の配列を定義
+
+type
+
+  { TForm1 }
+
+  TForm1 = class(TForm)
+    Button1: TButton;
+    Memo1: TMemo;
+    procedure Button1Click(Sender: TObject);
+  private
+
+  public
+
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.lfm}
+
+{ TForm1 }
+
+procedure TForm1.Button1Click(Sender: TObject);
+begin
+  // People[1]にデータを代入
+  People[1].Name := 'MoonWolf';
+  People[1].Age := 35;
+  People[1].City := 'Tokyo';
+  People[1].Weight := 70.5;
+
+  // People[2]にデータを代入
+  People[2].Name := 'C215 Mary';
+  People[2].Age := 28;
+  People[2].City := 'Osaka';
+  People[2].Weight := 55.3;
+
+  // Memo1に表示
+  Memo1.Lines.Append('People[1]:');
+  Memo1.Lines.Append('Name: ' + People[1].Name);
+  Memo1.Lines.Append('Age: ' + IntToStr(People[1].Age));
+  Memo1.Lines.Append('City: ' + People[1].City);
+  Memo1.Lines.Append('Weight: ' + FloatToStr(People[1].Weight) + ' kg');
+
+  Memo1.Lines.Append('');
+
+  Memo1.Lines.Append('People[2]:');
+  Memo1.Lines.Append('Name: ' + People[2].Name);
+  Memo1.Lines.Append('Age: ' + IntToStr(People[2].Age));
+  Memo1.Lines.Append('City: ' + People[2].City);
+  Memo1.Lines.Append('Weight: ' + FloatToStr(People[2].Weight) + ' kg');
+end;
+
+end.
+                              
