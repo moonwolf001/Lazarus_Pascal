@@ -1,0 +1,11 @@
+// Pascal のFor構文の最も簡単な例です。
+
+procedure TForm1.Button1Click(Sender: TObject);
+var
+  Number : Integer;        // for で使う変数も事前に定義
+begin
+  for Number := 1 to 5 do
+  begin
+     Memo1.Append(IntToStr(Number));
+  end;
+end;                
