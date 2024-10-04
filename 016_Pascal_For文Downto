@@ -1,0 +1,12 @@
+// PascalのFor文、Downtoを使い、制御変数をカウントダウンさせます。
+// For文は、制御変数を1つずつ上げるか、1つずつ下げる場合の繰り返し制御に使われます。
+
+procedure TForm1.Button1Click(Sender: TObject);
+var
+  Number : Integer;
+begin
+  for Number := 10 downto 5 do
+  begin
+     Memo1.Append(IntToStr(Number));
+  end;
+end;                   
