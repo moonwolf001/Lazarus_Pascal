@@ -1,0 +1,19 @@
+// かけ算九九の一部　
+// for I のループの中に、For J のループを入れて処理
+
+procedure TForm1.Button1Click(Sender: TObject);
+var
+  I,J               : Integer;  // I かけられる数、J かける数
+  StrI, StrJ, StrIJ : String;   // 表示文字
+begin
+  for I := 5 to 7 do
+  begin
+     For J := 1 to 3 do
+     begin
+        StrI  := IntToStr(I);
+        StrJ  := IntTOStr(J);
+        StrIJ := IntToStr(I*J);     // I * J のかけ算の結果を文字列に変換して代入
+        Memo1.Append(StrI+'x'+StrJ+'='+StrIJ);  // 文字列の結合は＋記号で行う
+     end;
+  end;
+end;                      
