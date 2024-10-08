@@ -1,0 +1,14 @@
+// Pascal While による繰り返しの例です
+// Whileの条件が真の間だけ、そのbeginとendの間が実行されます。
+
+procedure TForm1.Button1Click(Sender: TObject);
+var
+  I : Integer;
+begin
+  I := 5;
+  While I < 10 do
+  begin
+    Memo1.Append(IntToStr(I));
+    I := I + 1 ;                // I++ という表現はなし。そこがPascal。明示的に代入を指示。
+  end;
+end;             
