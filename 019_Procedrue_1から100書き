@@ -1,0 +1,24 @@
+// Procedure作成例 
+// 1から100までの数字を、手作りProcedureにて書きます。
+// 今回のProcedrueの定義はImplementation部開始直下に書きました。
+
+implementation
+
+{$R *.lfm}
+
+{ TForm1 }
+
+Procedure Write_Numbers;   // 手続き１
+var
+  i : integer;
+begin
+  for i := 1 to 100 do
+  begin
+    Form1.Memo1.Append(IntToStr(i));
+  end;
+end;
+
+procedure TForm1.Button1Click(Sender: TObject);
+begin
+  Write_Numbers;       // このシンプルな一行でProcedureを呼び出しています。
+end;                                           
