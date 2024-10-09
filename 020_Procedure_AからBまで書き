@@ -1,0 +1,29 @@
+// AからBまでの整数を書くProcedrueの例
+// Procedure Write_Number(57,63); のように呼び出すと、57から63までの数字をMemo1に表示
+// Procedure Write_Number(a,b);   a,b の条件：　a < b  ( a,b はマイナスの整数でも動きます）
+
+implementation
+
+{$R *.lfm}
+
+{ TForm1 }
+
+Procedure Write_Numbers(a:integer; b:integer);   // 手続き２
+var
+  i : integer;
+begin
+  for i := a to b do
+  begin
+    Form1.Memo1.Append(IntToStr(i));
+  end;
+end;
+
+procedure TForm1.Button1Click(Sender: TObject);
+var
+  Num1, Num2 : Integer;
+begin
+  Num1 := 57;
+  Num2 := 63;
+  Write_Numbers(Num1,Num2);
+end;
+                               
