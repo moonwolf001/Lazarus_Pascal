@@ -1,0 +1,34 @@
+// Lazarus 自作関数の例
+// 関数定義の場所は、今回はimplementation部に定義して、Unitスコープの関数とした
+
+implementation
+
+uses
+  Math   ;
+
+{$R *.lfm}
+
+{ TForm1 }
+
+Function Sum_AtoB(a:integer; b:integer):Integer;  // functionにはResultの型を明示
+var
+  i,sum : integer;
+begin
+  sum := 0;
+  for i := a to b do
+  begin
+    sum := sum + i;
+  end;
+  Result := sum;         // Result を呼び出し側に代入する
+end;
+
+procedure TForm1.Button1Click(Sender: TObject);
+var
+  Num1, Num2, Sum : Integer;
+begin
+  Num1 := 10;
+  Num2 := 13;
+  Sum  := Sum_AtoB(Num1,Num2);      // 関数の呼び出し方はProcedureと変わらないが、ここに結果が代入される点、注意
+  Memo1.Append(IntToStr(Sum));
+end;
+                                             
