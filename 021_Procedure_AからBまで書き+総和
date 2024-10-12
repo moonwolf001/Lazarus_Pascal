@@ -1,0 +1,34 @@
+//　AからBまでの書き＋AからBまでの総和　手続き３の例
+
+implementation
+
+uses
+  Math   ;
+
+{$R *.lfm}
+
+{ TForm1 }
+
+Procedure Write_Numbers(a:integer; b:integer);   // 手続き３
+var
+  i,sum : integer;
+begin
+  sum := 0;
+  for i := a to b do
+  begin
+    sum := sum + i;
+    Form1.Memo1.Append(IntToStr(i));
+  end;
+  Form1.Memo1.Append('------------------');
+  Form1.Memo1.Append('Sum:'+IntToStr(Sum));
+end;
+
+procedure TForm1.Button1Click(Sender: TObject);
+var
+  Num1, Num2 : Integer;
+begin
+  Num1 := 10;
+  Num2 := 13;
+  Write_Numbers(Num1,Num2);
+end;
+                                           
