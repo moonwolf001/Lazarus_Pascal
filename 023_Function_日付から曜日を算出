@@ -1,0 +1,24 @@
+// 日付から曜日算出する関数
+// DayOfWeek( 2024,10,25 )  と呼び出すと、金　として帰ってくる
+
+function DayOfWeek(y:integer;m:integer;d:integer):string;
+
+// 日付から曜日を求める関数。　
+//この式はZellerの公式。 1582年10月15日（グレゴリオ暦施行日）以前は無効
+
+var
+  i: integer;
+begin
+  if (m = 1) or (m = 2) then begin
+  y:=y-1;
+  m:=m+12;
+  end;
+  i:= (y + (y div 4) - (y div 100) + (y div 400) +((13*m+8) div 5) + d) mod 7;
+  if i= 0 then Result:='日';
+  if i= 1 then Result:='月';
+  if i= 2 then Result:='火';
+  if i= 3 then Result:='水';
+  if i= 4 then Result:='木';
+  if i= 5 then Result:='金';
+  if i= 6 then Result:='土';
+end;                    
