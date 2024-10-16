@@ -25,6 +25,11 @@
 - [Amazonで購入する](https://www.amazon.co.jp/dp/B0CW18PHYL) /　[ソースコードはこちら(ブランチ：book500)](https://github.com/moonwolf001/Lazarus_Pascal/tree/book500)
 - 内容: XY座標の書き方、Canvasによる星の書き方、数学の関数による星の移動、弾のビジュアル効果、これらすべての合計としてのゲームプロラムが公開されています。
 
+### 日本語版　MoonWolfと学ぶ PASCAL文法: Lazarus IDEを使った直観的なプログラム開発
+- [Amazonで購入する](https://www.amazon.co.jp/dp/B0DBQNJFMM) /　[ソースコードはこちら(ブランチ：book600)](https://github.com/moonwolf001/Lazarus_Pascal/tree/book600)
+- 内容: Python,JavaScript,Unity C#,JAVA,なでしこ３などを経験した筆者が、Pascalの基本文法を語りながらLazarusのIDEの素晴らしさを再評価しています。
+
+
 ## 使い方
 
 各ブランチは、対応する書籍の内容を反映したソースコードを含んでいます。
