@@ -1,0 +1,15 @@
+//直接コードでSQL文を指定する方法 
+//Form1のonCreate時に、オプジェクトインスペクターSQLQuery1の代わり直接書いています。
+//これがないと、Error : DataBase is locked 
+
+procedure TForm1.FormCreate(Sender: TObject);
+begin
+  try
+    // クエリ実行
+    SQLQuery1.SQL.Text := 'SELECT * FROM student_profiles';
+    SQLQuery1.Open;
+  except
+    on E: Exception do
+      ShowMessage('エラー: ' + E.Message);
+  end;
+end;             
