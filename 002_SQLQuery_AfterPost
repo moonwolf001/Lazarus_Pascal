@@ -1,0 +1,14 @@
+procedure TForm1.SQLQuery1AfterPost(DataSet: TDataSet);
+begin
+  // 変更を適用
+  try
+    SQLQuery1.ApplyUpdates;  // 変更をデータベースに適用
+    SQLTransaction1.CommitRetaining;  // トランザクションをコミットして再利用可能に
+  except
+    on E: Exception do
+    begin
+      ShowMessage('Error updating record: ' + E.Message);
+      SQLTransaction1.RollbackRetaining;  // エラー時にロールバック
+    end;
+  end;
+end;                  
