@@ -1,0 +1,12 @@
+.open TEST02
+
+CREATE TABLE ToDoList1 
+( id INTEGER PRIMARY KEY, ToDo TEXT );
+
+INSERT INTO ToDoList1 
+(id, ToDo) 
+VALUES (1, 'SQLDBを使いDBソフトTodoListを作成します');
+
+INSERT INTO ToDoList1 
+(id, ToDo) 
+VALUES (2, 'ここで、実験を繰り返し実力を上げます');
