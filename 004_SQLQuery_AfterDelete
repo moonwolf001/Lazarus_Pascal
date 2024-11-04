@@ -1,0 +1,5 @@
+procedure TForm1.SQLQuery1AfterDelete(DataSet: TDataSet);
+begin
+  SQLQuery1.ApplyUpdates;  
+  SQLTransaction1.CommitRetaining; 
+end;     
