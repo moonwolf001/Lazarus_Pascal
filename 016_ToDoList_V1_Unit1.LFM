@@ -1,0 +1,109 @@
+// To do list Lv1 by MoonWolf 2024
+// 念のため、LFM(Lazarus Form File)も上げておきます。
+// このフォイルにオブジェクトインスペクターの設定などが残っています。
+
+object Form1: TForm1
+  Left = 330
+  Height = 432
+  Top = 123
+  Width = 382
+  Caption = 'To Do List   V 1.00  by MoonWolf 2024'
+  ClientHeight = 432
+  ClientWidth = 382
+  OnCreate = FormCreate
+  LCLVersion = '3.6.0.0'
+  object DBGrid1: TDBGrid
+    Left = 16
+    Height = 240
+    Top = 16
+    Width = 352
+    Color = clWindow
+    Columns = <>
+    DataSource = DataSource1
+    Options = [dgEditing, dgTitles, dgIndicator, dgColumnResize, dgColumnMove, dgColLines, dgRowLines, dgTabs, dgAlwaysShowSelection, dgConfirmDelete, dgCancelOnExit, dgAutoSizeColumns, dgDisplayMemoText]
+    TabOrder = 0
+  end
+  object DBNavigator1: TDBNavigator
+    Left = 64
+    Height = 25
+    Top = 272
+    Width = 241
+    BevelOuter = bvNone
+    ChildSizing.EnlargeHorizontal = crsScaleChilds
+    ChildSizing.EnlargeVertical = crsScaleChilds
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 100
+    ClientHeight = 25
+    ClientWidth = 241
+    DataSource = DataSource1
+    Options = []
+    TabOrder = 1
+    VisibleButtons = [nbFirst, nbPrior, nbNext, nbLast, nbDelete, nbRefresh]
+  end
+  object Edit1: TEdit
+    Left = 24
+    Height = 23
+    Top = 312
+    Width = 232
+    TabOrder = 2
+    Text = 'Edit1'
+  end
+  object Button1: TButton
+    Left = 280
+    Height = 25
+    Top = 312
+    Width = 75
+    Caption = 'Button1'
+    TabOrder = 3
+    OnClick = Button1Click
+  end
+  object SQLite3Connection1: TSQLite3Connection
+    Connected = False
+    LoginPrompt = False
+    DatabaseName = 'TEST02'
+    KeepConnection = False
+    Transaction = SQLTransaction1
+    AlwaysUseBigint = False
+    Left = 48
+    Top = 368
+  end
+  object SQLTransaction1: TSQLTransaction
+    Active = False
+    Database = SQLite3Connection1
+    Left = 144
+    Top = 368
+  end
+  object SQLQuery1: TSQLQuery
+    IndexName = 'DEFAULT_ORDER'
+    MaxIndexesCount = 4
+    FieldDefs = <    
+      item
+        Name = 'id'
+        DataType = ftAutoInc
+        Precision = -1
+      end    
+      item
+        Name = 'ToDo'
+        DataType = ftMemo
+        Precision = -1
+      end>
+    AfterDelete = SQLQuery1AfterDelete
+    AfterPost = SQLQuery1AfterPost
+    Database = SQLite3Connection1
+    Transaction = SQLTransaction1
+    SQL.Strings = (
+      'SELECT * FROM todolist1'
+    )
+    Params = <>
+    Macros = <>
+    Left = 240
+    Top = 368
+  end
+  object DataSource1: TDataSource
+    DataSet = SQLQuery1
+    Left = 320
+    Top = 368
+  end
+end
