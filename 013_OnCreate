@@ -1,0 +1,8 @@
+procedure TForm1.FormCreate(Sender: TObject);
+begin
+  SQLite3Connection1.DatabaseName:='test02';
+  SQLite3Connection1.Connected:=True;
+  SQLQuery1.Close;
+  SQLQuery1.SQL.Text := 'SELECT * FROM todolist1';
+  SQLQuery1.Open;
+end;                   
