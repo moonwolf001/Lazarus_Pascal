@@ -1,0 +1,13 @@
+procedure TForm1.SQLQuery1AfterDelete(DataSet: TDataSet);
+begin
+  //削除時にはこれが必要
+  SQLQuery1.ApplyUpdates;
+  SQLTransaction1.CommitRetaining;
+end;
+
+procedure TForm1.SQLQuery1AfterPost(DataSet: TDataSet);
+begin
+  //変更時にはこれが必要
+  SQLQuery1.ApplyUpdates;
+  SQLTransaction1.CommitRetaining;
+end;                        
