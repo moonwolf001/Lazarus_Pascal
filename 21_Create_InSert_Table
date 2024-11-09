@@ -1,0 +1,21 @@
+-- To Do List Lv10 ( Advanced )のテーブル作成とデータ挿入
+
+.open TEST01
+
+CREATE TABLE ToDoList10 (
+    id INTEGER PRIMARY KEY,
+    Pri TEXT,
+    Urg TEXT,
+    ToDo TEXT
+);
+
+INSERT INTO ToDoList10 (id, Pri, Urg, ToDo) VALUES (8, 'low', 'low', 'ここはやるな');
+INSERT INTO ToDoList10 (id, Pri, Urg, ToDo) VALUES (9, 'high', 'high', 'いますぐ実施しなくてはならない');
+INSERT INTO ToDoList10 (id, Pri, Urg, ToDo) VALUES (11, 'high', 'low', 'ここに重点を当てる');
+INSERT INTO ToDoList10 (id, Pri, Urg, ToDo) VALUES (12, 'low', 'high', 'ここはやりたくはない');
+INSERT INTO ToDoList10 (id, Pri, Urg, ToDo) VALUES (13, 'high', 'high', 'ここはすばやくさばく');
+INSERT INTO ToDoList10 (id, Pri, Urg, ToDo) VALUES (14, 'low', 'high', '次回からないよう工夫');
+INSERT INTO ToDoList10 (id, Pri, Urg, ToDo) VALUES (15, 'low', 'low', 'ここをやる人はクビになる');
+INSERT INTO ToDoList10 (id, Pri, Urg, ToDo) VALUES (16, 'high', 'low', 'ここが出来る人ほど優秀');
+INSERT INTO ToDoList10 (id, Pri, Urg, ToDo) VALUES (17, 'high', 'low', '大企業はここに力を注ぐ');
+
