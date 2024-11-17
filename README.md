@@ -9,11 +9,11 @@
 - [Amazonで購入する](https://www.amazon.co.jp/dp/B0CQT4WTB1) /　[ソースコードはこちら(ブランチ：book100)](https://github.com/moonwolf001/Lazarus_Pascal/tree/book100)
 - 内容: Lazarusのインストールから始め、かけ算九九の実装までを詳しく解説します。付録にはPascal文法やLazarusの全コンポーネントの説明、用語の辞書も含まれています。
 
-### きみもPASCALでWindowsゲームを作ってみないか？LAZARUSを使ったゼロから始めるプログラミング開発
+### きみもPASCALでWindowsゲームを作ってみないか？
 - [Amazonで購入する](https://www.amazon.co.jp/dp/B0CD2RZ3DF) /　[ソースコードはこちら(ブランチ：book200)](https://github.com/moonwolf001/Lazarus_Pascal/tree/book200)
 - 内容: 何もない状態からゲームを作成した実況を書籍化したものです。プログラムの基礎訓練も収録されています。
 
-### ＜簡易説明版＞きみもPASCALでWindowsゲームを作ってみないか？LAZARUSプログラミング開発
+### ＜簡易説明版＞きみもPASCALでWindowsゲームを作ってみないか？
 - [Amazonで購入する](https://www.amazon.co.jp/dp/B0CDSCVNC8) /　[ソースコードはこちら(ブランチ：book300)](https://github.com/moonwolf001/Lazarus_Pascal/tree/book300)
 - 内容: ゲームプログラミング後の観点より簡潔にプログラムを説明したものです。
 
@@ -21,11 +21,11 @@
 - [Amazonで購入する](https://www.amazon.co.jp/dp/B0CPCJBJK7) /　[ソースコードはこちら(ブランチ：book400)](https://github.com/moonwolf001/Lazarus_Pascal/tree/book400)
 - 内容: ChatGPT4と共同作業によるゲーム開発。会話の詳細と、５つのゲームが公開されています。
 
-### 日本語版　ChatGPT4 Simple 2D Game: Lazarus（Pascal）数学とプログラミング
+### 日本語版　ChatGPT4 Simple 2D Game: Lazarus（Pascal）
 - [Amazonで購入する](https://www.amazon.co.jp/dp/B0CW18PHYL) /　[ソースコードはこちら(ブランチ：book500)](https://github.com/moonwolf001/Lazarus_Pascal/tree/book500)
 - 内容: XY座標の書き方、Canvasによる星の書き方、数学の関数による星の移動、弾のビジュアル効果、これらすべての合計としてのゲームプロラムが公開されています。
 
-### MoonWolfと学ぶ PASCAL文法: Lazarus IDEを使った直観的なプログラム開発
+### MoonWolfと学ぶ PASCAL文法
 - [Amazonで購入する](https://www.amazon.co.jp/dp/B0DBQNJFMM) /　[ソースコードはこちら(ブランチ：book600)](https://github.com/moonwolf001/Lazarus_Pascal/tree/book600)
 - 内容: Python,JavaScript,Unity C#,JAVA,なでしこ３などを経験した筆者が、Pascalの基本文法を語りながらLazarusのIDEの素晴らしさを再評価しています。
 
