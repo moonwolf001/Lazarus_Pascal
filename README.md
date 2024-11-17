@@ -29,6 +29,9 @@
 - [Amazonで購入する](https://www.amazon.co.jp/dp/B0DBQNJFMM) /　[ソースコードはこちら(ブランチ：book600)](https://github.com/moonwolf001/Lazarus_Pascal/tree/book600)
 - 内容: Python,JavaScript,Unity C#,JAVA,なでしこ３などを経験した筆者が、Pascalの基本文法を語りながらLazarusのIDEの素晴らしさを再評価しています。
 
+### MoonWolfと学ぶ LazarusでSQL DB
+- [Amazonで購入する](https://www.amazon.co.jp/dp/B0DMNHM6DD) /　[ソースコードはこちら(ブランチ：book700)](https://github.com/moonwolf001/Lazarus_Pascal/tree/book700)
+- 内容: SQLite3への接続、解決すべき諸問題の共有、DBのシンプルな作成例、これらを提供します。
 
 ## 使い方
 
